@@ -1,0 +1,7 @@
+species:
+  cat:
+    $ref: './cat.yaml'
+  dog:
+    $ref: './dog.yaml'
+  fish:
+      $ref: './fish.yaml'
