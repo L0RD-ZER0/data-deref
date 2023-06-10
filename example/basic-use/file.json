@@ -1,0 +1,9 @@
+{
+  "sendTo": "Sender",
+  "message": {
+    "$ref": "./message.json#message/ENG"
+  },
+  "localref": {
+    "$ref": "#/message"
+  }
+}
