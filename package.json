@@ -1,0 +1,67 @@
+{
+  "name": "data-deref",
+  "version": "0.0.0",
+  "description": "Dereference ``$ref`` files",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/L0RD-ZER0/data-deref.git"
+  },
+  "exports": {
+    ".": {
+      "types": "./lib/main.d.ts",
+      "require": "./lib/main.js",
+      "import": "./lib/main.js",
+      "default": "./lib/main.js"
+    },
+    "./config": {
+      "types": "./lib/config.d.ts",
+      "require": "./lib/config.js",
+      "import": "./lib/config.js",
+      "default": "./lib/config.js"
+    },
+    "./dereferencer": {
+      "types": "./lib/dereferencer.d.ts",
+      "require": "./lib/dereferencer.js",
+      "import": "./lib/dereferencer.js",
+      "default": "./lib/dereferencer.js"
+    },
+    "./file-parser": {
+      "types": "./lib/file-parser.d.ts",
+      "require": "./lib/file-parser.js",
+      "import": "./lib/file-parser.js",
+      "default": "./lib/file-parser.js"
+    },
+    "./handler": {
+      "types": "./lib/handler.d.ts",
+      "require": "./lib/handler.js",
+      "import": "./lib/handler.js",
+      "default": "./lib/handler.js"
+    }
+  },
+  "keywords": [
+    "ref",
+    "deref",
+    "dereference",
+    "json",
+    "data",
+    "objects"
+  ],
+  "author": "L0RD-ZER0",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/L0RD-ZER0/data-deref/issues"
+  },
+  "homepage": "https://github.com/L0RD-ZER0/data-deref#readme",
+  "dependencies": {
+    "@types/node": "^20.2.6",
+    "typescript": "^5.1.3"
+  },
+  "devDependencies": {
+    "yaml": "^2.3.1"
+  }
+}

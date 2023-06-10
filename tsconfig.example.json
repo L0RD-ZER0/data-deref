@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "target": "ES2017",
+    "outDir": "dist/examples",
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "paths": {
+      "data-deref/*": ["./lib/*"],
+      "data-deref": ["./lib/main"]
+    },
+    "types": ["./lib/main.d.ts"]
+  },
+  "include": [
+    "example/**/*"
+  ]
+}
