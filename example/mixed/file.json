@@ -1,0 +1,11 @@
+{
+  "data": {
+    "numbers": {
+      "$ref": "./definitions.yaml#numbers"
+    },
+    "strings": {
+      "$ref": "./definitions.yaml#strings"
+    }
+  },
+  "desc": "Basic Data Type."
+}

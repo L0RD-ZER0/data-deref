@@ -1,0 +1,12 @@
+numbers:
+type: array
+items:
+  type: number
+description:
+  $ref: './file.json#desc'
+strings:
+  type: array
+  items:
+    type: string
+  description:
+    $ref: './file.json#desc'
