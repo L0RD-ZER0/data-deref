@@ -77,9 +77,10 @@ pull-request after making changes. All pull requests are welcomed, and subjected
 This project is licensed under the MIT License - see the [LICENSE] file for details.
 
 
-[path.extname(...]: https://nodejs.org/api/path.html#pathextnamepath
-[JSON.parse(...]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse
+[path.extname(...)]: https://nodejs.org/api/path.html#pathextnamepath
+[JSON.parse(...)]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse
 [GitHub Repository]: https://GitHub.com/LORD-ZER0/data-deref
 [examples]: https://GitHub.com/LORD-ZER0/data-deref/tree/master/examples
 [issues]: https://GitHub.com/LORD-ZER0/data-deref/issues
 [LICENSE]: ./LICENSE
+[yaml]: https://www.npmjs.com/package/yaml
