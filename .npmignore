@@ -32,3 +32,5 @@ example
 dist
 src
 node_modules
+tsconfig.json
+tsconfig.example.json
