@@ -1,11 +1,19 @@
 {
   "name": "data-deref",
   "version": "0.0.0",
-  "description": "Dereference ``$ref`` files",
+  "description": "A simple dereferencer for ``$ref`` pointers in data documents.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npx tsc",
+    "b": "npm run build",
+    "compile": "npx tsc",
+    "c": "npm run compile",
+    "example:build": "npm run build && npm link && npx tsc --project tsconfig.example.json && npm link data-deref",
+    "example:basic-use": "npm run example:build && node ./dist/examples/basic-use.js",
+    "example:basic-use-object": "npm run example:build && node ./dist/examples/basic-use-object.js",
+    "example:with-yaml": "npm run example:build && node ./dist/examples/with-yaml.js",
+    "example:mixed": "npm run example:build && node ./dist/examples/mixed.js"
   },
   "repository": {
     "type": "git",
@@ -58,10 +66,11 @@
   },
   "homepage": "https://github.com/L0RD-ZER0/data-deref#readme",
   "dependencies": {
-    "@types/node": "^20.2.6",
-    "typescript": "^5.1.3"
+
   },
   "devDependencies": {
+    "@types/node": "^20.2.6",
+    "typescript": "^5.1.3",
     "yaml": "^2.3.1"
   }
 }
