@@ -1,7 +1,12 @@
 import { dirname, resolve as resolvePath } from "path";
 import { parseFile } from "./file-parser";
 
-async function extractRef(obj: any, ref: string | undefined) {
+/**
+ * Extract a reference from an object.
+ * @param obj Object to extract the reference from.
+ * @param ref Reference to extract (``/`` separated).
+ */
+export async function extractRef(obj: any, ref: string | undefined) {
   if (!ref) {
     return obj;
   }
@@ -19,6 +24,12 @@ async function extractRef(obj: any, ref: string | undefined) {
   return refObj;
 }
 
+/**
+ * Handler to handle a reference.
+ * @param $ref Reference to be handled.
+ * @param fsPath Path to the file containing the reference.
+ * @param loaded Object containing all loaded files.
+ */
 export async function handleRef($ref: string, fsPath: string, loaded: { [_: string]: any }) {
   const [path, ref] = $ref.split('#');
   if (path === '') {

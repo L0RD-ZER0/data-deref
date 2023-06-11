@@ -2,6 +2,10 @@ import * as fs from "fs/promises";
 import { extname } from "path";
 import { getFileParsers, getIgnoredErrors } from "./config";
 
+/**
+ * Parse a file based on the parser registered for its extension.
+ * @param filePath The path to the file to parse.
+ */
 export async function parseFile(filePath: string) {
   const fileParsers = getFileParsers();
   let fileContents;
