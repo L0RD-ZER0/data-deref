@@ -1,9 +1,9 @@
 {
   "name": "data-deref",
-  "version": "0.0.0",
+  "version": "1.0.0-rc-1",
   "description": "A simple dereferencer for ``$ref`` pointers in data documents.",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "main": "lib/main.js",
+  "types": "lib/main.d.ts",
   "scripts": {
     "build": "npx tsc",
     "b": "npm run build",
