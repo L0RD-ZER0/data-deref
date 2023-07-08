@@ -12,7 +12,11 @@ import handleRef, { extractRef } from "./handler";
 async function derefRecursive(obj: any, fsPath: string, loaded: { [_: string]: any }) {
   const TERMINATION_TYPES = getTerminationTypes();
   for (const key in obj) {
-    if (TERMINATION_TYPES.has(typeof obj[key])) {
+    if (
+      TERMINATION_TYPES.has(typeof obj[key]) ||
+      obj[key] === null ||  // null is an object apparently and doesn't have hasOwnProperty
+      obj[key] === undefined  // undefined is also an object that doesn't have hasOwnProperty
+    ) {
       continue;
     }
     if (obj[key].hasOwnProperty('$ref')) {
